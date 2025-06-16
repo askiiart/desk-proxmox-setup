@@ -1,0 +1,24 @@
+{
+    "disks": {
+        "install": "6483A445-BF16-4E97-9929-B069792C3FE9",
+        "other": [
+            "nvme-IM2P33F3A_NVMe_ADATA_512GB_2L1129S758KT",
+            "ata-Samsung_SSD_870_EVO_1TB_S75BNL0W928510J"
+        ]
+    },
+    "programs": [
+        "htop",
+        "ncdu",
+        "curl",
+        "mergerfs",
+        "git",
+        "progress",
+        "rsync",
+        "restic",
+        "iotop",
+        "tmux"
+    ],
+    "ssh-keys": [
+        "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCxnEgXTMHN844yrpagOPorBKdTwHnZ5hiwnU9fS139oktAdoGnInu9zRMmCn72hNbBBJbpGrm7tYTG9b3WaouaFvyfx5fnWPSiL+Nuaqb8aspKqYOY+aFQ46vfQnHQPC0UcekTtXX+9xM2ngt3wEXOkR4Oc48hgJQRGdGABfcio2+dVLE35giefZZy+TJbnPXd2mM7ZFh9V+gt7v/gxaW7IUarAs19/ROE0vHnP+Lkq8kRh9KgoifQMdnR7b6taSV8ilETeEDjf/p8X4JXi38SuP7He1qLVBzoKZME4PSmJbC7zgW+H+iRWN2o63fnRkn7uZkYz+P4BnS0pMfRmVHOELfNWP1191ZugLEdIV0TZuev9kGuJq5AeQTk6zpRkx8w99lTv0bcfapQV+44nna3pwnxq8zvmXkmfYmNF/gQYYY5eaaq0eBB8o/8FCchrN/pKyuNbFiFz8+OIMvdBCA6QqsOb2fyQ6n3RlnjfJuDzstFkQLrdmsQYOYL1I9zOT1wMVaGaio0Mnf6zZlmsSBYFmL9Oms4BOKDdlbGpLvus0uNhAx4sM51G7523Z1thAEp4sqCNCLCcWosApsfZ/YsO5XSU2XVUAUskymu6fDP4elmQSeL5TTDycGVI7yiW3fX5UYGXprNXMbfbGDALx4cQGnIaTRxByoX6tC3sEK+SQ=="
+    ]
+}

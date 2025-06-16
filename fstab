@@ -1,0 +1,5 @@
+PARTUUID=3857f198-72c5-644a-9da6-1e542d370785              /mnt/media0  xfs           defaults 0 0
+PARTUUID=1674ea7b-55d1-2c4f-bb5e-75142feae5db              /mnt/media1  xfs           defaults 0 0
+PARTUUID=abec3d4f-baab-a94d-a9b4-2b64cb8f4de9              /mnt/media2  xfs           defaults 0 0
+PARTUUID=d7196edd-9870-f14d-8269-387338e79939              /mnt/media3  xfs           defaults 0 0
+/mnt/media0:/mnt/media1:/mnt/media2:/mnt/media3            /mnt/media   fuse.mergerfs defaults,allow_other,use_ino,category.create=mfs,moveonenospc=true,minfreespace=4G,cache.files=partial,dropcacheonclose=true  0 0
