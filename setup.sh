@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -euxo pipefail
+set -euo pipefail
 SCRIPT_DIR=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && pwd)
 
 if [ $(whoami) -ne "root"]; then
@@ -70,3 +70,11 @@ if ! $(pdbedit -L -v | grep -q "Unix username: .*$smb_user"); then
     read -p "Enter the SMB password at the prompt - press enter to continue"
     smbpasswd -a $smb_user
 fi
+
+IFS=$'\n'
+for key in $(jq '."ssh-keys"[]?' $SCRIPT_DIR/data.json -r); do
+        if ! grep -q "$key" $HOME/.ssh/authorized_keys; then
+        echo "$key" | tee -a $HOME/.ssh/authorized_keys
+    fi
+done
+unset IFS
