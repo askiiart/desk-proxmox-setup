@@ -26,10 +26,9 @@ Programs are installed according to `programs` in `data.json`
 
 ## TODO
 
-- ~~host smb share~~
 - ~~set proxmox community repos~~
 - ~~add ssh keys~~
 - ~~assemble server~~
-- ~~set up smb share mounting on server~~
+- nfs over ssh on boot on server
 - zram-generator on server
 - ~~get ssd off btrfs (in progress)~~
