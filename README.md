@@ -28,8 +28,8 @@ Programs are installed according to `programs` in `data.json`
 
 - ~~host smb share~~
 - ~~set proxmox community repos~~
-- add ssh keys
-- assemble server
-- set up smb share mounting on server
+- ~~add ssh keys~~
+- ~~assemble server~~
+- ~~set up smb share mounting on server~~
 - zram-generator on server
-- get ssd off btrfs
+- ~~get ssd off btrfs (in progress)~~
