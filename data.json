@@ -23,8 +23,8 @@
         "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCxnEgXTMHN844yrpagOPorBKdTwHnZ5hiwnU9fS139oktAdoGnInu9zRMmCn72hNbBBJbpGrm7tYTG9b3WaouaFvyfx5fnWPSiL+Nuaqb8aspKqYOY+aFQ46vfQnHQPC0UcekTtXX+9xM2ngt3wEXOkR4Oc48hgJQRGdGABfcio2+dVLE35giefZZy+TJbnPXd2mM7ZFh9V+gt7v/gxaW7IUarAs19/ROE0vHnP+Lkq8kRh9KgoifQMdnR7b6taSV8ilETeEDjf/p8X4JXi38SuP7He1qLVBzoKZME4PSmJbC7zgW+H+iRWN2o63fnRkn7uZkYz+P4BnS0pMfRmVHOELfNWP1191ZugLEdIV0TZuev9kGuJq5AeQTk6zpRkx8w99lTv0bcfapQV+44nna3pwnxq8zvmXkmfYmNF/gQYYY5eaaq0eBB8o/8FCchrN/pKyuNbFiFz8+OIMvdBCA6QqsOb2fyQ6n3RlnjfJuDzstFkQLrdmsQYOYL1I9zOT1wMVaGaio0Mnf6zZlmsSBYFmL9Oms4BOKDdlbGpLvus0uNhAx4sM51G7523Z1thAEp4sqCNCLCcWosApsfZ/YsO5XSU2XVUAUskymu6fDP4elmQSeL5TTDycGVI7yiW3fX5UYGXprNXMbfbGDALx4cQGnIaTRxByoX6tC3sEK+SQ=="
     ],
     "exports": [
-        "/mnt/media       127.0.0.1/8(rw,sync,no_subtree_check,insecure,no_root_squash,fsid=1)",
-        "/mnt/user        127.0.0.1/8(rw,sync,no_subtree_check,insecure,no_root_squash,fsid=2)"
+        "/mnt/media       192.168.1.0/29(rw,sync,subtree_check,no_root_squash,fsid=1)",
+        "/mnt/user        192.168.1.0/29(rw,sync,subtree_check,no_root_squash,fsid=2)"
     ],
     "fstab": [
         "PARTUUID=3857f198-72c5-644a-9da6-1e542d370785              /mnt/media0  xfs           defaults 0 0",

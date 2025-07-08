@@ -26,9 +26,4 @@ Programs are installed according to `programs` in `data.json`
 
 ## TODO
 
-- ~~set proxmox community repos~~
-- ~~add ssh keys~~
-- ~~assemble server~~
-- nfs over ssh on boot on server
 - zram-generator on server
-- ~~get ssd off btrfs (in progress)~~

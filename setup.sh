@@ -56,8 +56,6 @@ sed -i 's/#PasswordAuthentication yes/PasswordAuthentication no/g' /etc/ssh/sshd
 sed -i 's/#Port 22/Port 2222/g' /etc/ssh/sshd_config
 
 ### NFS ###
-apt install nfs-kernel-server -y
-
 IFS=$'\n'
 for key in $(jq '."exports"[]?' $SCRIPT_DIR/data.json -r); do
     if ! grep -q "$key" /etc/exports; then
@@ -65,7 +63,8 @@ for key in $(jq '."exports"[]?' $SCRIPT_DIR/data.json -r); do
     fi
 done
 unset IFS
-systemctl enable --now nfs-kernel-server
+exportfs -arv
+systemctl enable --now nfs-server
 
 IFS=$'\n'
 for key in $(jq '."ssh-keys"[]?' $SCRIPT_DIR/data.json -r); do
